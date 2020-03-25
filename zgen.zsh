@@ -306,7 +306,7 @@ zgen-apply() {
         -zgpute "Initializing completions ..."
 
         autoload -Uz compinit && \
-            compinit $ZGEN_COMPINIT_FLAGS
+            compinit "${=ZGEN_COMPINIT_FLAGS}"
     fi
 }
 
